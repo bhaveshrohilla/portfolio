@@ -3,14 +3,12 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
 > A modern, minimalistic, and lightweight portfolio website built with HTML and Tailwind CSS (CDN). No build steps, no heavy frameworks—just code.
 
 🔗 **Live Demo:** [bhaveshrohilla.me](https://bhaveshrohilla.me/)
 
-![Portfolio Preview](./preview.png)
-*(Note: Upload a screenshot of your site named `preview.png` to your repo)*
 
 ---
 
@@ -65,7 +63,7 @@ Feel free to fork this project and submit a pull request if you find a bug or wa
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
 ---
 
