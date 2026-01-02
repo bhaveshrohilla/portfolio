@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bhavesh Rohilla</title>
+    <meta name="title" content="Bhavesh Rohilla">
+    <meta name="description" content="Frontend Developer building modern web tools like Verticon Tools. Explore my projects, technical skills, and portfolio.">
+    <meta name="keywords" content="Bhavesh Rohilla, Frontend Developer, Verticon Tools, Web Developer, HTML, CSS, JavaScript, Charkhi Dadri">
+    <meta name="author" content="Bhavesh Rohilla">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bhaveshrohilla.me/">
+    <meta property="og:title" content="Bhavesh Rohilla">
+    <meta property="og:description" content="Frontend Developer building modern web tools like Verticon Tools. Explore my projects, technical skills, and portfolio.">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bhaveshrohilla.me/">
+    <meta property="twitter:title" content="Bhavesh Rohilla">
+    <meta property="twitter:description" content="Frontend Developer building modern web tools like Verticon Tools. Explore my projects and portfolio.">
+
+    <meta name="theme-color" content="#6366f1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1', // Indigo
+                        secondary: '#ec4899', // Pink
+                        dark: '#0f172a',
+                        light: '#f8fafc',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Glassmorphism Utilities */
+        .glass-card {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dark .glass-card {
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+        /* Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-light text-slate-800 dark:bg-dark dark:text-slate-100 transition-colors duration-300 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 glass-card bg-white/80 dark:bg-dark/80 border-b border-gray-200 dark:border-gray-800 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center gap-2 group p-1">
+                <span class="material-icons-round text-2xl sm:text-3xl text-primary group-hover:scale-110 transition-transform">code</span>
+                <span class="font-heading font-bold text-lg sm:text-xl tracking-tight">Bhavesh</span>
+            </a>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="#contact" class="flex items-center justify-center p-2 sm:px-4 sm:py-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <span class="material-icons-round sm:hidden">mail</span>
+                    <span class="hidden sm:block text-sm font-semibold">Hire Me</span>
+                </a>
+                
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300">
+                    <span id="theme-icon" class="material-icons-round text-xl">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden px-4">
+        <div class="absolute top-20 left-0 sm:left-10 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float dark:bg-primary/10"></div>
+        <div class="absolute bottom-20 right-0 sm:right-10 w-64 h-64 bg-secondary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float" style="animation-delay: 2s; dark:bg-secondary/10"></div>
+
+        <div class="text-center z-10 max-w-4xl reveal">
+            <div class="inline-flex items-center gap-2 py-1 px-3 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-semibold mb-6 border border-primary/20">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Frontend Developer
+            </div>
+            <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Hi, I'm <br class="sm:hidden" /> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Bhavesh Rohilla</span>
+            </h1>
+            <p class="text-base sm:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto leading-relaxed px-2">
+                I build pixel-perfect, accessible, and performant web experiences. 
+                Focused on simplicity and code quality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full px-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold hover:scale-105 active:scale-95 transition-transform shadow-lg shadow-primary/25 text-center">
+                    View Work
+                </a>
+                <a href="https://github.com/bhaveshrohilla" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-full glass-card hover:bg-white/50 dark:hover:bg-slate-800 active:scale-95 transition-all font-semibold flex items-center justify-center gap-2 text-center">
+                    <span>GitHub</span>
+                    <span class="material-icons-round text-sm">open_in_new</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-4 sm:px-6 relative" id="skills">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 text-center reveal">Technical <span class="text-primary">Arsenal</span></h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 reveal">
+                <div class="glass-card bg-white/50 dark:bg-slate-800/50 p-5 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300 border-b-4 border-orange-500 shadow-sm">
+                    <span class="material-icons-round text-3xl sm:text-4xl mb-2 text-orange-500">html</span>
+                    <h3 class="font-bold text-sm sm:text-base">HTML5</h3>
+                </div>
+
+                <div class="glass-card bg-white/50 dark:bg-slate-800/50 p-5 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300 border-b-4 border-blue-500 shadow-sm">
+                    <span class="material-icons-round text-3xl sm:text-4xl mb-2 text-blue-500">css</span>
+                    <h3 class="font-bold text-sm sm:text-base">CSS3</h3>
+                </div>
+
+                <div class="glass-card bg-white/50 dark:bg-slate-800/50 p-5 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300 border-b-4 border-yellow-400 shadow-sm">
+                    <span class="material-icons-round text-3xl sm:text-4xl mb-2 text-yellow-400">javascript</span>
+                    <h3 class="font-bold text-sm sm:text-base">JavaScript</h3>
+                </div>
+
+                <div class="glass-card bg-white/50 dark:bg-slate-800/50 p-5 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300 border-b-4 border-green-500 shadow-sm">
+                    <span class="material-icons-round text-3xl sm:text-4xl mb-2 text-green-500">dns</span>
+                    <h3 class="font-bold text-sm sm:text-base">Node.js</h3>
+                </div>
+
+                <div class="glass-card bg-white/50 dark:bg-slate-800/50 p-5 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300 border-b-4 border-blue-400 shadow-sm">
+                    <span class="material-icons-round text-3xl sm:text-4xl mb-2 text-blue-400">terminal</span>
+                    <h3 class="font-bold text-sm sm:text-base">Python</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 sm:px-6 bg-slate-50 dark:bg-slate-900/50" id="projects">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-10 text-center reveal">Featured <span class="text-secondary">Projects</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 reveal">
+                
+                <div class="group glass-card bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <div class="h-40 sm:h-48 bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center relative overflow-hidden shrink-0">
+                        <span class="material-icons-round text-5xl sm:text-6xl text-white/60 group-hover:scale-110 transition-transform">build_circle</span>
+                    </div>
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-lg sm:text-xl font-bold">Verticon Tools</h3>
+                            <span class="bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] sm:text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Live</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                            Single client-side suite for PDF and Image conversion. Handles all processing locally in browser.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Client-Side</span>
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">PDF/Img</span>
+                        </div>
+                        <a href="https://tools.verticon.tech" target="_blank" class="w-full sm:w-auto text-center justify-center sm:justify-start bg-slate-100 dark:bg-slate-700 sm:bg-transparent sm:dark:bg-transparent py-2 rounded-lg sm:rounded-none sm:py-0 text-primary font-semibold text-sm hover:underline inline-flex items-center gap-1 transition-colors">
+                            Visit Website <span class="material-icons-round text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group glass-card bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-dashed border-gray-200 dark:border-gray-700 flex flex-col h-full">
+                    <div class="h-40 sm:h-48 bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-icons-round text-5xl sm:text-6xl text-slate-400 group-hover:rotate-12 transition-transform">construction</span>
+                    </div>
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-lg sm:text-xl font-bold">IDF Platform</h3>
+                            <span class="bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400 text-[10px] sm:text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Dev</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                            An experimental platform currently under active development. Innovation in document management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Experimental</span>
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Soon</span>
+                        </div>
+                        <a href="https://tools.verticon.tech/idf-platform" target="_blank" class="w-full sm:w-auto text-center justify-center sm:justify-start bg-slate-100 dark:bg-slate-700 sm:bg-transparent sm:dark:bg-transparent py-2 rounded-lg sm:rounded-none sm:py-0 text-slate-500 hover:text-primary font-semibold text-sm hover:underline inline-flex items-center gap-1 transition-colors">
+                            Preview Status <span class="material-icons-round text-sm">visibility</span>
+                        </a>
+                    </div>
+                </div>
+
+                 <div class="group glass-card bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <div class="h-40 sm:h-48 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shrink-0">
+                        <span class="material-icons-round text-5xl sm:text-6xl text-white/50 group-hover:scale-110 transition-transform">person</span>
+                    </div>
+                    <div class="p-6 sm:p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-lg sm:text-xl font-bold">This Portfolio</h3>
+                            <span class="bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 text-[10px] sm:text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">2026</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
+                            My personal digital garden. Built to be fast, minimal, and fully theme-aware using modern CSS.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Tailwind</span>
+                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Open Source</span>
+                        </div>
+                        <a href="https://github.com/bhaveshrohilla/portfolio" target="_blank" class="w-full sm:w-auto text-center justify-center sm:justify-start bg-slate-100 dark:bg-slate-700 sm:bg-transparent sm:dark:bg-transparent py-2 rounded-lg sm:rounded-none sm:py-0 text-primary font-semibold text-sm hover:underline inline-flex items-center gap-1 transition-colors">
+                            View Source <span class="material-icons-round text-sm">code</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 relative" id="contact">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <span class="material-icons-round text-5xl sm:text-6xl text-primary mb-6">mail_outline</span>
+            <h2 class="font-heading text-3xl sm:text-5xl font-bold mb-6">Let's work together.</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-10 text-base sm:text-lg">
+                Currently open for freelance projects and opportunities.
+            </p>
+            
+            <a href="mailto:hireme@bhaveshrohilla.me" class="w-full sm:w-auto inline-flex justify-center items-center gap-3 bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
+                <span class="material-icons-round">send</span>
+                hireme@bhaveshrohilla.me
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-gray-200 dark:border-gray-800 text-center px-4">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="https://github.com/bhaveshrohilla" target="_blank" class="text-slate-500 hover:text-primary transition-colors p-2">
+                <span class="sr-only">GitHub</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+        </div>
+        <p class="text-slate-500 text-sm">© 2026 Bhavesh Rohilla. Built with ❤️</p>
+    </footer>
+
+    <script>
+        // 1. Theme Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+
+        function initTheme() {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+                themeIcon.textContent = 'light_mode';
+            } else {
+                html.classList.remove('dark');
+                themeIcon.textContent = 'dark_mode';
+            }
+        }
+        initTheme();
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+                themeIcon.textContent = 'dark_mode';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+                themeIcon.textContent = 'light_mode';
+            }
+        });
+
+        // 2. Scroll Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
